@@ -36,6 +36,20 @@
         android:layout_marginTop="8dp" />
 
     <Button
+        android:id="@+id/btn_pick_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/pick_folder" />
+
+    <TextView
+        android:id="@+id/text_folder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_marginTop="8dp" />
+
+    <Button
         android:id="@+id/btn_pick_dir"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

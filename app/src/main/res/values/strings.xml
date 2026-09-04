@@ -2,11 +2,17 @@
 <resources>
     <string name="app_name">NSZ 解压</string>
     <string name="pick_file">选择 NSZ / NCZ 文件</string>
+    <string name="pick_folder">选择文件夹（自动扫描，批量解压）</string>
     <string name="pick_dir">选择输出文件夹</string>
     <string name="go">开始解压</string>
     <string name="selected_file">已选文件：%1$s</string>
+    <string name="selected_folder">已选文件夹：%1$s（%2$d 个 NSZ / NCZ）</string>
     <string name="selected_dir">输出到：%1$s</string>
-    <string name="hint">先选文件，再选输出文件夹，然后点「开始解压」。\n重名文件会自动按时间改名，不会覆盖。</string>
+    <string name="restored_dir">输出到：%1$s（上次使用）</string>
+    <string name="folder_none">文件夹中未找到 .nsz / .ncz 文件</string>
+    <string name="need_output">请先选择输出文件夹</string>
+    <string name="batch_progress">（%1$d/%2$d）%3$s</string>
+    <string name="hint">选文件或文件夹，再选输出文件夹（会记住上次的选择），然后点「开始解压」。\n输出文件夹没选时：单个文件需先选择一次；批量模式默认输出到所选文件夹。\n重名文件会自动按时间改名，不会覆盖。</string>
     <string name="err_extension">仅支持 .nsz / .ncz 文件</string>
     <string name="status_preparing">准备中…</string>
     <string name="status_extracting">正在解压：%1$s</string>
