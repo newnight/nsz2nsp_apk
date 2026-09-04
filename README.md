@@ -1,3 +1,5 @@
+<p align="center"><img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="96" alt="Nsz for Android"></p>
+
 # Nsz for Android (nszapp)
 
 > ⚡ **Powered by AI** — This project is the Android port of [nsz2nsp](https://github.com/newnight/nsz2nsp): the Swift decompression core was ported to Kotlin through human–AI collaboration (WorkBuddy).
