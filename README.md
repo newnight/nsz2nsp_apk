@@ -5,6 +5,9 @@
 > ⚡ **Powered by AI** — This project is the Android port of [nsz2nsp](https://github.com/newnight/nsz2nsp): the Swift decompression core was ported to Kotlin through human–AI collaboration (WorkBuddy).
 > ⚡ **Powered by AI** — 本项目是 [nsz2nsp](https://github.com/newnight/nsz2nsp) 的 Android 移植版：Swift 解压核心经人机协作（WorkBuddy）移植为 Kotlin 实现。
 
+> 🖥️ **macOS version / macOS 版**：[nsz2nsp](https://github.com/newnight/nsz2nsp) — the original Swift implementation.
+> 🖥️ **macOS 版**：[nsz2nsp](https://github.com/newnight/nsz2nsp) —— 原始 Swift 实现。
+
 A native Android NSZ / NCZ decompressor (NSZ → NSP, NCZ → NCA). Pick a file, pick an output folder, tap extract — that's it.
 一款 Android 原生的 NSZ / NCZ 解压工具（NSZ → NSP，NCZ → NCA）。选文件、选输出文件夹、点解压，就这么简单。
 

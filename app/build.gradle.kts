@@ -16,9 +16,30 @@ android {
         versionName = "1.0"
     }
 
+    signingConfigs {
+        create("release") {
+            val ksPath = System.getenv("RELEASE_STORE_FILE")
+            if (ksPath != null) {
+                // real release key, provided via CI environment (GitHub Actions secrets)
+                storeFile = file(ksPath)
+                storePassword = System.getenv("RELEASE_STORE_PASSWORD")
+                keyAlias = System.getenv("RELEASE_KEY_ALIAS")
+                keyPassword = System.getenv("RELEASE_KEY_PASSWORD")
+            } else {
+                // fallback: reuse the debug key so release APKs are still installable
+                val dbg = signingConfigs.getByName("debug")
+                storeFile = dbg.storeFile
+                storePassword = dbg.storePassword
+                keyAlias = dbg.keyAlias
+                keyPassword = dbg.keyPassword
+            }
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = false
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
