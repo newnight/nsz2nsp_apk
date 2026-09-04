@@ -1,4 +1,4 @@
-<p align="center"><img src="app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" width="96" alt="Nsz for Android"></p>
+<p align="center"><img src="social-preview.png" alt="Nsz for Android" width="800"></p>
 
 # Nsz for Android (nszapp)
 
