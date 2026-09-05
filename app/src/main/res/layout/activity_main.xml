@@ -3,72 +3,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg_main"
     android:padding="24dp"
     android:gravity="center_horizontal">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="24dp" />
+    <!-- scrollable top section: title, hint, pickers -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="24dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/hint"
+                android:textSize="14sp"
+                android:textColor="#D9D9E3"
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/btn_pick_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pick_file" />
+
+            <TextView
+                android:id="@+id/text_file"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btn_pick_folder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/pick_folder" />
+
+            <TextView
+                android:id="@+id/text_folder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp" />
+
+            <Button
+                android:id="@+id/btn_pick_dir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/pick_dir" />
+
+            <TextView
+                android:id="@+id/text_dir"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- pinned bottom section: progress, action, status, link -->
 
     <TextView
+        android:id="@+id/label_overall"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hint"
-        android:textSize="14sp"
-        android:layout_marginBottom="24dp" />
-
-    <Button
-        android:id="@+id/btn_pick_file"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/pick_file" />
-
-    <TextView
-        android:id="@+id/text_file"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/overall_label"
         android:textSize="13sp"
-        android:layout_marginTop="8dp" />
+        android:visibility="gone" />
 
-    <Button
-        android:id="@+id/btn_pick_folder"
+    <ProgressBar
+        android:id="@+id/progress_overall"
+        style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/pick_folder" />
-
-    <TextView
-        android:id="@+id/text_folder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="13sp"
-        android:layout_marginTop="8dp" />
-
-    <Button
-        android:id="@+id/btn_pick_dir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/pick_dir" />
-
-    <TextView
-        android:id="@+id/text_dir"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="13sp"
-        android:layout_marginTop="8dp" />
+        android:layout_marginTop="4dp"
+        android:max="10000"
+        android:progress="0"
+        android:visibility="gone" />
 
     <ProgressBar
         android:id="@+id/progress"
         style="?android:attr/progressBarStyleHorizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:max="10000"
         android:progress="0" />
 
@@ -84,7 +124,20 @@
         android:id="@+id/text_status"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:maxHeight="140dp"
+        android:scrollbars="vertical"
         android:textSize="13sp"
+        android:textColor="#C9C9D6"
         android:layout_marginTop="16dp"
         android:textIsSelectable="true" />
+
+    <TextView
+        android:id="@+id/link_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/link_mac"
+        android:textSize="13sp"
+        android:textColor="#9F8CF0"
+        android:padding="4dp" />
 </LinearLayout>

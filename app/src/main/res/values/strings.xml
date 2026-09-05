@@ -12,7 +12,7 @@
     <string name="need_output">Please pick an output folder first</string>
     <string name="batch_progress">(%1$d/%2$d) %3$s</string>
     <string name="go">Extract</string>
-    <string name="hint">Pick a file or a folder, pick the output folder (your last choice is remembered), then tap "Extract".\nIf no output folder is chosen: single files need one pick; batch mode writes into the scanned folder.\nConflicting names get a timestamp suffix — nothing is overwritten.</string>
+    <string name="hint">Pick a file or a folder, pick the output folder (your last choice is remembered), then tap "Extract".\nIf no output folder is chosen: single files need one pick; batch mode writes into the scanned folder, keeping the original folder structure.\nFiles whose output already exists are skipped — nothing is overwritten or renamed.</string>
     <string name="err_extension">Only .nsz / .ncz files are supported</string>
     <string name="status_preparing">Preparing…</string>
     <string name="status_extracting">Extracting: %1$s</string>
@@ -23,5 +23,13 @@
     <string name="entry_mismatch">✗ %1$s hash mismatch</string>
     <string name="entry_copied">• %1$s (copied as-is)</string>
     <string name="toast_done">Extraction finished</string>
+    <string name="status_skipped">Output already exists — skipped ✓</string>
+    <string name="batch_skipped">⏭ %1$s already exists — skipped</string>
     <string name="summary_renamed">Name conflict, renamed to %1$s</string>
+    <string name="overall_label">Overall progress</string>
+    <string name="batch_failed">✗ %1$s failed: %2$s</string>
+    <string name="batch_summary_done">Done ✓ %1$d/%2$d extracted, %3$d skipped, %4$d failed (output: %5$s)</string>
+    <string name="hint_keep_structure">Batch mode keeps the original folder structure in the output.</string>
+    <string name="link_mac">🖥️ Get the macOS version (nsz2nsp Releases)</string>
+    <string name="toast_no_browser">No browser available</string>
 </resources>

@@ -12,7 +12,7 @@
     <string name="folder_none">文件夹中未找到 .nsz / .ncz 文件</string>
     <string name="need_output">请先选择输出文件夹</string>
     <string name="batch_progress">（%1$d/%2$d）%3$s</string>
-    <string name="hint">选文件或文件夹，再选输出文件夹（会记住上次的选择），然后点「开始解压」。\n输出文件夹没选时：单个文件需先选择一次；批量模式默认输出到所选文件夹。\n重名文件会自动按时间改名，不会覆盖。</string>
+    <string name="hint">选文件或文件夹，再选输出文件夹（会记住上次的选择），然后点「开始解压」。\n输出文件夹没选时：单个文件需先选择一次；批量模式默认输出到所选文件夹，并保留原文件夹结构。\n重名文件不会改名：输出已存在的会自动跳过，不会覆盖。</string>
     <string name="err_extension">仅支持 .nsz / .ncz 文件</string>
     <string name="status_preparing">准备中…</string>
     <string name="status_extracting">正在解压：%1$s</string>
@@ -23,5 +23,13 @@
     <string name="entry_mismatch">✗ %1$s 哈希不匹配</string>
     <string name="entry_copied">• %1$s（直接复制）</string>
     <string name="toast_done">解压完成</string>
+    <string name="status_skipped">输出文件已存在，跳过 ✓</string>
+    <string name="batch_skipped">⏭ %1$s 已存在，跳过</string>
     <string name="summary_renamed">同名冲突，已按时间改名为 %1$s</string>
+    <string name="overall_label">总进度</string>
+    <string name="batch_failed">✗ %1$s 失败：%2$s</string>
+    <string name="batch_summary_done">完成 ✓ 解压 %1$d/%2$d，跳过 %3$d，失败 %4$d（输出：%5$s）</string>
+    <string name="hint_keep_structure">批量模式会在输出中保留原文件夹结构。</string>
+    <string name="link_mac">🖥️ 下载 macOS 版（nsz2nsp Releases）</string>
+    <string name="toast_no_browser">没有可用的浏览器</string>
 </resources>

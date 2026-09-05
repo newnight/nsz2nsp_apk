@@ -64,5 +64,4 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            Nsz-debug.apk
             Nsz-release.apk
